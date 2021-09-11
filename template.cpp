@@ -32,6 +32,7 @@ void printv(Container A)
   {
     cout << v << " ";
   }
+  cout << endl;
 }
 
 int solution(vector<int> &A)
