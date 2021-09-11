@@ -6,24 +6,38 @@
 #include <algorithm>
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
 #include <numeric> //std::accumulate
 #include <climits> //X_MAX
 
 using namespace std;
 
 template <class T>
-void printv(vector<T> A)
+void printv(int A)
 {
-  for (int v : A)
+  cout << A << endl;
+}
+
+template <class... Args>
+void printv(int A, Args... args)
+{
+  cout << A << " ";
+  printv(args...);
+}
+
+template <class Container>
+void printv(Container A)
+{
+  for (auto v : A)
   {
     cout << v << " ";
   }
-  cout << endl;
 }
 
 int solution(vector<int> &A)
 {
-  return
+  int sol = 0;
+  return sol;
 }
 
 int main()
