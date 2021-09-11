@@ -38,6 +38,7 @@ int solution(vector<int> &A)
   long long n = A.size() + 1;      // +missing elem
   long long sum = n * (n + 1) / 2; // summatory if all elem are present
   long long realSum = 0;
+
   for (int v : A)
   {
     realSum += v;

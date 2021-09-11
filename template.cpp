@@ -6,8 +6,20 @@
 #include <algorithm>
 #include <vector>
 #include <unordered_map>
+#include <numeric> //std::accumulate
+#include <climits> //X_MAX
 
 using namespace std;
+
+template <class T>
+void printv(vector<T> A)
+{
+  for (int v : A)
+  {
+    cout << v << " ";
+  }
+  cout << endl;
+}
 
 int solution(vector<int> &A)
 {
@@ -17,10 +29,6 @@ int solution(vector<int> &A)
 int main()
 {
   vector<int> array({});
-  for (int v : array)
-  {
-    cout << v << " ";
-  }
-  cout << endl;
+  printv(array);
   cout << solution(array) << endl;
 }
